@@ -15,13 +15,19 @@ def load_map_image(path: str):
 
 def main():
     # Title and description
-    st.title("🌐 Global Internet Usage by Country, 2015")
     st.markdown(
-        """
-        This dashboard shows the share of individuals using the Internet 
+    """
+    <div style="text-align: center; margin-bottom: 1rem;">
+      <h1>🌐 Global Internet Usage by Country, 2015</h1>
+      <p style="font-size:16px; color: #444;">
+        This dashboard shows the share of individuals using the Internet  
         in each country for the year 2015. Data source: Our World in Data.
-        """
-    )
+      </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
     # Display the map
     img_path = os.path.join("images", "Internet_Usage.png")
