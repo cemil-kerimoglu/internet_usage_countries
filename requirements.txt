@@ -1,2 +1,6 @@
 streamlit
-Pillow
+pillow
+plotly
+pandas
+geopandas
+
